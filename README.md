@@ -25,11 +25,17 @@ cd src/tabucol && maturin develop --release && cd -
 
 You can choose RLTabucol0(without RL) or RL-Tabucol or ACO-RL-Tabucol for training or testing (The training and testing command as follows:
 # run example
-1: RLTabucol0: ```bash python batch_runner.py dummy.pt instance.col color_num output_dir --time-limit 18000 --RL False --num-jobs 10 --concurrency 2 ``` 
-2: RL-Tabucol: ```bash python batch_runner.py dummy.pt instance.col color_num output_dir --time-limit 18000 --RL True --num-jobs 10 --concurrency 2 ``` 
-3: ACO-RL-Tabucol: ```bash python batch_runner.py dummy.pt instance.col color_num output_dir --time-limit 18000 --RL True --num-jobs 10 --concurrency 2 ```
+1: RLTabucol0: ```bash python batch_runner.py dummy.pt instance.col color_num output_dir 
+--time-limit 18000 --RL False --num-jobs 10 --concurrency 2 ``` 
+
+2: RL-Tabucol: ```bash python batch_runner.py dummy.pt instance.col color_num output_dir 
+--time-limit 18000 --RL True --num-jobs 10 --concurrency 2 ``` 
+
+3: ACO-RL-Tabucol: ```bash python batch_runner.py dummy.pt instance.col color_num output_dir 
+--time-limit 18000 --RL True --num-jobs 10 --concurrency 2 ```
 
 You can train as follows:
+
 # train example
 ```bash python trainer.py -E 50 -N 250 -C 24 ```
 
