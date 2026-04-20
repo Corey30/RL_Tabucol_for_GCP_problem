@@ -1,4 +1,4 @@
-# Reinforcement learning driven TabuCol (RLTCol)
+# Reinforcement learning driven TabuCol (RLTabuCol)
 
 The RLTCol algorithm works by iteratively running the local search algorithm TabuCol, and running an RL agent. The two components pass solutions to each other.
 Also the project implemments Ant colony algorithm (ACO) for training and testing, which aims to provide a good starting point for tabucol algorithm
